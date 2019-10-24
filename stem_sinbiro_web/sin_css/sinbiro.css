@@ -1,0 +1,363 @@
+/*폰트 폴더 폰트 호출*/
+@font-face{
+	font-family: 'busan', 'Monopoly' ;
+	src:url("../font/busan.ttf");
+	src:url("../font/Monopoly.ttf");
+	src:url("../font/NanumGothic.ttf");
+	
+}
+/*바디 폰트 호출*/
+body
+{
+	width: 100%;
+	height: 100%;
+	font-family: 'busan', 'Monopoly', 'NanumGothic';
+
+}
+/*마진 초기화*/
+html, body, div 
+{
+	margin: 0
+}
+
+/*컬러 파레트 시작 color palette start*/
+/*배경 색상 bg color*/
+.main_bg_color{background-color: #093a27;}
+.sub_bg_color{background-color: #282828;}
+.foot_bg_color{background-color: #202020}
+
+/*폰트 색상 font color*/
+/*main font color*/
+.main_font_color01{color: #6E716F;}
+.main_font_color02{color: #FFFFFF;}
+/*sub font color*/
+.sub_font_color01{color: #282828;}
+.sub_font_color02{color: #FFFFFF;}
+.sub_font_color03{color: #939393;}
+.sub_font_color04{color: #777777}
+
+/*오브젝트 색상 Object color*/
+.object_color01{color: #202020}
+/*컬러 파레트 끝 color palette end* /
+
+/*폰트 모양 및 크기 스타일 */
+.menu_text
+{
+	font-family: 'Monopoly';
+	font-size: 1.2em;
+	text-decoration: underline;
+	letter-spacing:1px;
+}
+.top_menu_text{
+	font-family: 'Monopoly';
+	font-size: 1em;
+	letter-spacing:1px;
+}
+
+.bottom_Notice_text{
+	font-family: 'busan';
+	font-size: 0.95em;
+	letter-spacing:1px;
+}
+
+/*고객 센터 버튼 4종 모양 및 크기 스타일 */
+.bottom_cs_text{
+	font-family: 'busan';
+	font-size: 0.90em;
+	text-indent: 0.5em;
+	font-weight: 600;
+	
+}
+
+.bottom_time_lunch_text{
+	font-family: 'busan';
+	font-size: 0.70em;
+	text-indent: 0.7em;
+	
+}
+
+.bottom_tel_text{
+	font-family: 'Monopoly';
+	font-size: 1.30em;
+	text-indent: 0.35em; 
+	
+}
+
+/*바텀 주소 및 사업자 등록번호 */
+.bottom_address_text{
+	font-family: 'busan';
+	font-size: 0.77em;
+	text-indent: 1em;
+	font-weight: bold;
+	
+}
+
+.bottom_copy_text{
+	font-family: 'Monopoly';
+	font-size: 0.77em;
+	text-indent: 1em;
+	font-weight: bold;
+	
+}
+
+.language_button_text
+{
+	font-family: 'NanumGothic';
+	font-size: 1em;
+	text-indent: 0.4em;
+	font-weight: bold;
+}
+.language_button_text_select
+{
+	font-family: 'NanumGothic';
+	font-size: 1em;
+	text-indent: 0.4em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+/*요소*/
+
+/*로고 이미지 부모 div의 높이 값이 90px 이고 50% 로 잡아둬서 이미지의 높이값이 45px 이며 남은 공백인 45px 이다 
+고로 높이 값의 % 가 달라질때 부모의 크기를 고려하여 마진 탑의 크기를 조절 하라*/
+.logo
+{
+	height: 50%;
+	margin-top: 22px;
+	cursor:pointer;
+}
+
+.foot_logo
+{
+	width: 100%;
+	cursor:pointer;
+	
+}
+/*요소*/
+
+
+
+
+
+
+
+/*탑 박스*/
+.top_bg
+{
+	width: 100%;
+	height: 140px;
+	position: fixed;
+	
+	
+}
+/*최대 크기 1200px 고정용 박스*/
+.top_box
+{
+	max-width: 1200px;
+	min-width: 1024px;
+	height: 140px;
+	margin: 0 auto;
+		
+}
+/*탑 포지션 고정으로 인한 백 레이어 밀어내기*/
+.top_space_dumy
+{	
+	width: 100%;
+	height: 140px;
+}
+
+/*탑 박스 윗쪽*/
+.top_top
+{
+	width: 100%;
+	height: 90px;
+
+}
+.top_logo{
+	width: 20%;
+	height: 90px;
+	float: left;
+	text-align: center;
+}
+.top_middle_space
+{
+	width: 60%;
+	height: 90px;
+	float: left;
+}
+.top_menu
+{
+	width: 20%;
+	height: 90px;
+	float: left;
+	line-height: 90px;
+	text-align: center;
+}
+
+/*탑 박스 아래쪽*/
+.top_bottom
+{
+	width: 100%;
+	height: 50px;
+}
+
+.top_button
+{
+	width: 20%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+}
+.top_button:hover
+{
+	background-color: #202020;
+	color:#FFFFFF;
+}
+
+/*바텀 박스*/
+.bottom_bg
+{
+	width: 100%;
+	min-width:1200px;
+	height: 350px;
+
+}
+/*최대크기 1200px 고정용 박스*/
+.bottom_box
+{
+	max-width: 1200px;
+	min-width: 1024px;
+	height: 140px;
+	margin: 0 auto;
+		
+}
+.bottom_top
+{
+	width: 100%;
+	height: 170px;
+	line-height: 170px;
+	float: left;
+	box-sizing:border-box; 
+	border-bottom: 2px solid #343434  ;
+}
+.bottom_top_notice_board
+{
+	width: 85%;
+	height: 170px;
+	float: left;
+	
+}
+.bottom_top_cs_box
+{
+	width: 15%;
+	height: 170px;
+	float: left;
+	
+	
+}
+.cs_button{
+	width: 84%;
+	height: 60%;
+	min-width: 145px;
+	margin: 20% 4% 20% 12%;
+	box-sizing:border-box; 
+	border: 3px solid #343434 ;
+	float: left;
+		
+	
+}
+.cs_text
+{
+	width:100%;
+	height: 24%;
+	line-height: 100%;
+	margin-top: 4%;
+	float: left;
+	
+}
+.cs_time
+{
+	width:100%;
+	height: 15%;
+	line-height: 14px;
+	margin-bottom: 1%;
+	float: left;
+	
+}
+.cs_lunch
+{
+	width:100%;
+	height: 15%;
+	line-height: 14px;
+	margin-top: 1%;
+	float: left;
+	
+}
+.cs_tel
+{
+	width:100%;
+	height: 39.5%;
+	margin-top: 0.5%;
+	line-height: 38px;
+	float: left;
+	
+	
+}
+
+
+.bottom_bottom
+{
+	width: 100%;
+	height: 180px;
+	float: left;
+
+}
+
+.foot_logo_box
+{
+	width: 9%;
+	height: 100%;
+	line-height: 135px;
+	float: left;
+}
+
+.foot_text_box
+{
+	width: 68%;
+	height: 100%;
+	float: left;
+	
+}
+
+.foot_address
+{
+	width: 100%;
+	height: 37%;
+	line-height: 110px;
+}
+
+.foot_copy
+{
+	width: 100%;
+	height: 63%;
+	
+}
+
+
+.foot_language
+{
+	width: 23%;
+	height: 37%;
+	float: left;
+	line-height: 110px;
+}
+
+.language_button
+{
+	width: 30%;
+	float: left;
+	
+}
